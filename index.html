@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interactive Animation with Themes</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Interactive Gallery</h1>
+
+    <div class="theme-switch">
+      <label class="switch">
+        <input type="checkbox" id="themeToggle">
+        <span class="slider"></span>
+      </label>
+      <span id="themeLabel">Light Mode</span>
+    </div>
+
+    <div class="image-button-wrapper">
+      <img id="animatedImage" src="image1.jpg" alt="Gallery Image">
+      <button id="changeImageBtn" class="btn">Change Image</button>
+      <button id="animateBtn" class="btn">Animate Image</button>
+    </div>
+
+    <div id="message" class="message"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
